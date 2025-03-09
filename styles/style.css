@@ -21,6 +21,26 @@ html {
   justify-content: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -31,9 +51,7 @@ html {
 .result {
   grid-area: result;
   width: 711px;
-  height: 456px;
   margin-top: 78px;
-  margin-bottom: 133px;
 }
 
 .result__video-container {
@@ -73,7 +91,6 @@ html {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: "Fira Sans Condensed";
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -113,7 +130,7 @@ html {
 }
 
 .search-form__textfield {
-  color: rgba(255, 255, 255, 0.7);
+  color: #1b1919;
   font-family: "Fira Sans Condensed";
   font-size: 18px;
   font-weight: 400;
@@ -138,7 +155,7 @@ html {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: #fff;
-  border-color: #000;
+  border-color: #1b1919;
   outline: 1px solid #fff;
 }
 
@@ -186,7 +203,7 @@ html {
 }
 
 .button:active {
-  background-color: #808080;
+  background-color: #545050;
 }
 
 .button:focus-visible {
@@ -199,6 +216,11 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.content__list-container {
+  max-height: 299px;
+}
+
 .content__list {
   display: flex;
   flex-direction: column;
@@ -217,11 +239,6 @@ html {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 94%;
-  text-transform: uppercase;
 }
 
 .content__video-card {
@@ -252,7 +269,7 @@ html {
 }
 
 .content__card-link_current {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -292,46 +309,14 @@ html {
   width: 194px;
   height: 103px;
   object-fit: cover;
-}
-
-.content__video-card-thumbnail:focus {
-  outline: none;
-}
-
-.content__video-card-thumbnail img {
-  width: 100%;
-  height: 100%;
   object-position: center;
-  object-fit: cover;
 }
 
 .content__list-item {
   padding: 0 3px;
 }
-.content__list-container {
-}
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
 
 .custom-scrollbar {
-  max-height: 299px;
   overflow: auto;
   padding-top: 2px;
   padding-left: 1px;
