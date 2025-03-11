@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgb(217 217 217 / 10%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}
+
 html {
   block-size: 100%;
 }
@@ -75,7 +87,7 @@ ol {
   margin-top: 16px;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 7px;
+  margin-top: 13px;
 }
 
 .search-form__pseudo-checkbox {
@@ -111,8 +123,8 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 14px;
-  margin-top: 8px;
-  margin-bottom: 5px;
+  margin-top: 6px;
+  margin-bottom: 0px;
 }
 
 .visually-hidden {
@@ -137,7 +149,7 @@ ol {
   border-bottom: 1px solid #fff;
   background: none;
   background-color: transparent;
-  padding: 2px;
+  padding: 2px 0;
 }
 
 .search-form__pseudo-checkbox {
@@ -214,14 +226,15 @@ ol {
 }
 
 .content__list-container {
-  max-height: 299px;
+  height: 299px;
+  position: relative;
+  overflow: auto;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  position: relative;
 }
 
 .title {
@@ -315,22 +328,4 @@ ol {
 
 .content__list-item {
   padding: 0 3px;
-}
-
-.custom-scrollbar {
-  overflow: auto;
-  padding-top: 2px;
-  padding-left: 1px;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
 }
